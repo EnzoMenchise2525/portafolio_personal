@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/E2.png">
+    <meta name="keywords" content="Enzo Gustavo Gómez Menchise, Enzo Gustavo Gomez Menchise, 
+    Enzo Gómez, enzo gomez, enzogomez.cl, enzomenchise.cl, Enzo, enzomenchise, enzo menchise, 
+    Ingeniero Informatico, ingeniero informativo, informativo"/>
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Enzo Gómez</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#tecnologias" onclick="seleccionar()">TECNOLOGIAS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>ENZO GÓMEZ</h1>
+            <h2>Ingeniero Informático</h2>
+            <div class="redes">
+                <!-- Enlaces a redes sociales -->
+                <a href="https://web.facebook.com/enzomenchise" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/enzo.gomezm/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://secure.skype.com/portal/overview" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/enzo-g%C3%B3mez-menchise-baa7a21b9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/EnzoMenchise2525" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p class="texto">
+                <span>Hola, soy Enzo Gómez Menchise.</span> 
+                Soy Ingeniero Informático titulado en 2024 de Duoc UC, Viña del Mar. 
+                Cuento con dos años de experiencia como desarrollador Full Stack, 
+                participando en proyectos donde he implementado soluciones completas 
+                tanto en el Back End como en el Front End. Además, me especialicé en 
+                Ciencias de Datos con Python, enfocándome en el campo de Deep Learning. 
+                Junto a mi formación académica, tengo experiencia en docencia y 
+                capacitación en el area de informática, así como en establecer metas 
+                claras e implementar acciones para alcanzarlas. Estoy comprometido 
+                con el aprendizaje continuo y el desarrollo profesional, buscando 
+                siempre superar los retos con dedicación y perseverancia.
+                
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            25-09-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +56979134327
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            enzomenchise@gmail.com
+                        </li>
+                        <li>
+                            <strong>linkedin:</strong>
+                            www.linkedin.com/in/enzo-gómez-menchise-baa7a21b9
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Pasaje Ingeniero Mutilla 379, Valparaiso, Chile.
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Informatico</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>windows</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-face-laugh"></i>
+                            <span>HUMOR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boton de descargar CV -->
+            <a href="pdf/Enzo_Gómez_Menchise_CV.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+
+            <h2> HABILIDADES </h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Competencias técnicas</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="85">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="70">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="80">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="75">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PL/SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="75">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <h3>Competencias técnicas</h3>
+                    <div class="skill">
+                        <span>Ionic Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="60">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="45">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CMD</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="40">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>XSD</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="45">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>XML</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-percent="45">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+
+                <!-- COLUMNA IZQUIERDA -->
+
+                <div class="col izquierda">
+                    <h3>Experiencia Laboral</h3>
+
+                    <div class="item izq">
+                        <h4> Programador Full Stack </h4>
+                        <span class="casa">Programador Independiente</span>
+                        <span class="fecha">Mayo 2025 - Actualmente - Proyectos</span>
+
+                        <p style="text-align: justify;">
+                            Desarrollé e implementé portafolios web para estudiantes y profesionales, 
+                            facilitando su presencia online. Además, impartí ayudantías y clases a 
+                            estudiantes de Ingeniería en Informática, apoyando en programación, 
+                            buenas prácticas y resolución de problemas, fomentando aprendizaje 
+                            práctico y comprensión de conceptos clave.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Administrador de Stock</h4>
+                        <span class="casa">BGR SPA</span>
+                        <span class="fecha">Enero 2025 - Marzo 2025 - Reemplazos</span>
+
+                        <p style="text-align: justify;">
+                            Encargado de la administración de productos, verificando su estado 
+                            al recibirlos y asegurando la coherencia de los registros entre el 
+                            sistema y el inventario físico. Además, gestionar y solucionar 
+                            inconsistencias, como valores nulos o ceros, para evitar datos faltantes 
+                            y garantizar la precisión de la información.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Entrenador de Chatbots</h4>
+                        <span class="casa">Outlier</span>
+                        <span class="fecha">Octubre 2024 - Noviembre 2024 - Proyectos</span>
+
+                        <p style="text-align: justify;">
+                            Encargado de entrenar y optimizar chatbots para diversas empresas o 
+                            entidades, utilizando tecnologias avanzadas prompts, con el fin de 
+                            mejorar y optimizar las respuestas de las IA para que sean mas naturales.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item izq">
+                        
+                        <h4>Programador de Base de Datos</h4>
+                        <span class="casa">Layner SPA</span>
+                        <span class="fecha">Marzo 2024 - Abril 2024 - Reemplazo</span>
+                        
+                        <p style="text-align: justify;">
+                            Encargado de administrar el sistema informativo del Hospital Gustavo Fricke, 
+                            con la responsabilidad de detectar y corregir errores en la base de datos 
+                            utilizando Infor cloverleaf(R) Global monitor al utilizar los 
+                            lenguajes XSD, XML y usando sistemas de SQL.
+                        </p>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Diseñador y Programador Web</h4>
+                        <span class="casa">Rukapewma</span>
+                        <span class="fecha">
+                            Agosto 2023 – Diciembre 2023 - Practica Profesional
+                        </span>
+
+                        <p style="text-align: justify;">
+                            Diseño y desarrollo de un sistema web intuitivo para la gestión y 
+                            publicación eficiente de proyectos de renovación de áreas públicas. 
+                            Implementando permisos de administrador utilizando Django y 
+                            un control de base de datos en PostgreSQL.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Diseñador y Programador Web</h4>
+                        <span class="casa">Macroactiva SPA</span>
+                        <span class="fecha">Marzo 2023 - Marzo 2023 - Practica Laboral</span>
+                        
+                        <p style="text-align: justify;">
+                            Diseño de Maqueta funcional sistema de gestión de horas, utilizando 
+                            tecnologías web en Visual Studio Code. Análisis y definición de 
+                            requerimientos de software, proposición modelo de datos y 
+                            elaboración de maqueta funcional con PYTHON y DJANGO.
+                        </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- COLUMNA DERECHA -->
+
+                <div class="col derecha">
+                    <h3>Formación</h3>
+                    <div class="item der">
+                        <h4>Universidad</h4>
+                        <span class="casa">Duoc UC</span>
+                        <span class="fecha">2020 - 2024</span>
+                        <p>• Analista y planificación de requisitos informáticos.</p>
+                        <p>• Arquitectura de Software.</p>
+                        <p>• Programación de Software.</p>
+                        <p>• Análisis y desarrollo de modelos de datos.</p>
+                        <p>• Ciencia de Datos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Colegio</h4>
+                        <span class="casa">Guardia Marina Riquelme</span>
+                        <span class="fecha">2006 - 2016</span>
+                        <p style="text-align: justify;">
+                            • Asistí a ese colegio desde el quinto básico hasta cuarto medio, 
+                            lo que me permitió completar toda mi educación secundaria en esa institución
+                        </p>
+                        <p style="text-align: justify;">
+                            • En tercero y cuarto medio asistí al curso de acercamiento al mar en la liga marítima de chile, 
+                            donde enseñaron la historia marítima de Chile y navegación.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="titulo-portfolio">PORTAFOLIO</h2>
+
+        <div class="contenido-seccion">
+            <div class="filtros-izquierda">
+                <ul>
+                    <li data-filtro="portafolio" class="active">Portafolio</li>
+                    <li data-filtro="frontend">Front End</li>
+                    <li data-filtro="backend">Otros trabajos</li>
+                </ul>
+            </div>
+
+            <div class="galeria">
+
+                <!-- seccion portafolio -->
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_4/" target="_blank"><img src="img/portafolio_2.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_5/" target="_blank"><img src="img/portafolio_3.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_6/" target="_blank"><img src="img/portafolio_6.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_7/" target="_blank"><img src="img/portafolio_4.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_8/" target="_blank"><img src="img/portafolio_5.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="portafolio">
+                    <a href="https://enzomenchise2525.github.io/portafolio_9/" target="_blank"><img src="img/portafolio_8.png" alt=""></a>
+                </div>
+
+                <!-- seccion front end -->
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/Perfil_Student/" target="_blank"><img src="img/front_end_1.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/Viajes_FrontEnd/" target="_blank"><img src="img/front_end_2.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/the_coffee_chop/" target="_blank"><img src="img/front_end_6.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/Web_Front_End/" target="_blank"><img src="img/front_end_4.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/Viajes_FrontEnd2/#slide-1" target="_blank"><img src="img/front_end_5.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="frontend">
+                    <a href="https://enzomenchise2525.github.io/restaurant_example/" target="_blank"><img src="img/front_end_3.png" alt=""></a>
+                </div>
+
+                <!-- seccion backend -->
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/portafolio_10/" target="_blank"><img src="img/portafolio_9.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/Website-Turismo/" target="_blank"><img src="img/turismo.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/Website-Clima/" target="_blank"><img src="img/clima.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/Website-DBTurismo/" target="_blank"><img src="img/viajes.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/construccion/" target="_blank"><img src="img/sitioconstruccion.png" alt=""></a>
+                </div>
+                <div class="proyecto" data-categoria="backend">
+                    <a href="https://enzomenchise2525.github.io/portafolio_2/" target="_blank"><img src="img/portafolio_1.png" alt=""></a>
+                </div>
+
+            </div>
+
+            <!-- Botón "Mis Proyectos" con logo de GitHub SVG inline -->
+            <div class="boton-proyectos" style="text-align:center; margin-top:30px;">
+                <a href="https://github.com/EnzoMenchise2525?tab=repositories" target="_blank" class="btn-proyectos">
+                    <!-- Icono GitHub SVG -->
+                    <svg class="icon-github" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 0-.285-.01-1.04-.016-2.04-3.338.726-4.042-1.608-4.042-1.608-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.762-1.604-2.665-.3-5.467-1.335-5.467-5.933 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.118-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.656 1.653.244 2.873.12 3.176.77.84 1.234 1.91 1.234 3.22 0 4.61-2.807 5.63-5.48 5.926.43.372.814 1.103.814 2.222 0 1.604-.015 2.896-.015 3.287 0 .32.216.694.825.576C20.565 21.796 24 17.296 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    Mis Proyectos
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN TECNOLOGÍAS -->
+    <section id="tecnologias" class="tecnologias">
+        <h2 class="titulo-tecnologias">TECNOLOGÍAS</h2>
+
+        <div class="tabla-tecnologias">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Front End</th>
+                        <th>Back End</th>
+                        <th>Base de Datos</th>
+                        <th>Cloud Computing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Front End"><i class="fab fa-html5 fa-2x"></i><br>HTML</td>
+                        <td data-label="Back End"><i class="fab fa-java fa-2x"></i><br>Java</td>
+                        <td data-label="Base de Datos"><i class="fas fa-database fa-2x"></i><br>MySQL</td>
+                        <td data-label="Cloud Computing"><i class="fab fa-aws fa-2x"></i><br>AWS</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Front End"><i class="fab fa-css3-alt fa-2x"></i><br>CSS</td>
+                        <td data-label="Back End"><i class="fab fa-php fa-2x"></i><br>PHP</td>
+                        <td data-label="Base de Datos"><i class="fas fa-server fa-2x"></i><br>SQL Server</td>
+                        <td data-label="Cloud Computing"><i class="fab fa-google fa-2x"></i><br>Google Cloud</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Front End"><i class="fab fa-js-square fa-2x"></i><br>JavaScript</td>
+                        <td data-label="Back End"><i class="fab fa-node fa-2x"></i><br>Node.js</td>
+                        <td data-label="Base de Datos"><i class="fas fa-server fa-2x"></i><br>PostgreSQL</td>
+                        <td data-label="Cloud Computing"><i class="fab fa-microsoft fa-2x"></i><br>Azure</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Front End"><i class="fab fa-angular fa-2x"></i><br>Angular</td>
+                        <td data-label="Back End"><i class="fas fa-cogs fa-2x"></i><br>Spring Boot</td>
+                        <td data-label="Base de Datos"><i class="fas fa-server fa-2x"></i><br>Management Studio</td>
+                        <td data-label="Cloud Computing">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+     <!-- SECCION CONTACTO -->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+
+                <form action="https://formsubmit.co/enzomenchise@gmail.com" method="POST" class="col">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                    <input type="text" name="phone" placeholder="Número telefónico" required>
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    
+                    <!-- Botón de enviar -->
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://enzomenchise2525.github.io/portafolio.cl/" />
+                    <input type="hidden" name="captcha" value="false">
+
+                </form>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pasaje Ingeniero Mutilla 379, Valparaiso, Chile.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamar a: +56979134327 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: enzomenchise@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <!-- Redes Sociales -->
+            <a href="https://web.facebook.com/enzomenchise" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/enzo.gomezm/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://secure.skype.com/portal/overview" target="_blank"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/enzo-g%C3%B3mez-menchise-baa7a21b9/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/EnzoMenchise2525" target="_blank"><i class="fa-brands fa-github"></i></a>        
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

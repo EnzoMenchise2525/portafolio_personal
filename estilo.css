@@ -1,0 +1,1342 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+* {
+    box-sizing: border-box; /* Incluye padding y border dentro del ancho y alto */
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+}
+
+/*-----------------------------------*\
+    HEADER / MENÚ
+\*-----------------------------------*/
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.contenedor-header header .logo a {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+
+/* Menú horizontal */
+.contenedor-header header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    padding: 5px 3px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #1CB698;
+}
+
+/* Botón menú responsive (hamburguesa) */
+.nav-responsive {
+    display: none;
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*-----------------------------------*\
+    SECCIÓN HERO / INICIO
+\*-----------------------------------*/
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+                url(img/fondo.jpg) center/cover no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    background-color: #1e2326;
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* Imagen del banner */
+.inicio .contenido-banner img {
+    width: 80%;
+    margin: 40px auto 0 auto;
+    display: block;
+    border: 10px solid #1CB698;
+    border-radius: 10%;
+}
+
+/* Textos */
+.inicio .contenido-banner h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 42px;
+    margin-top: 40px;
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* Redes sociales */
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px 0 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+/*-----------------------------------*\
+    TEXTOS JUSTIFICADOS
+\*-----------------------------------*/
+.texto {
+    text-align: justify;
+}
+
+/*-----------------------------------*\
+    MEDIA QUERIES RESPONSIVE
+\*-----------------------------------*/
+@media (max-width: 768px) {
+
+    .contenedor-header header {
+        padding: 10px; 
+        position: relative; 
+    }
+
+    .contenedor-header header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1e2326;
+        position: absolute;
+        top: 85%; /* Menú más cercano al header */
+        left: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .contenedor-header header nav ul.activo {
+        display: flex;
+    }
+
+    .contenedor-header header nav ul li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contenedor-header header nav ul li a {
+        padding: 12px 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------------ SOBRE MÍ ---------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+/* Contenedor principal de la sección "sobre mí" */
+.sobremi {
+    background-color: #1e2326; /* Fondo oscuro para destacar el contenido */
+    color: #fff; /* Texto en blanco para contraste */
+    padding: 50px 20px; /* Espaciado interno */
+}
+
+/* Contenido interno centrado y con ancho máximo */
+.sobremi .contenido-seccion {
+    max-width: 1100px; /* Limita el ancho del contenido para lectura cómoda */
+    margin: auto; /* Centrado horizontal */
+}
+
+/* Título principal de la sección */
+.sobremi h2 {
+    font-size: 48px; /* Tamaño grande para destacar */
+    font-family: 'Righteous', cursive; /* Fuente llamativa */
+    text-align: center; /* Centrado del texto */
+    padding: 20px 0; /* Espacio arriba y abajo del título */
+}
+
+/* Párrafos dentro del contenido */
+.sobremi .contenido-seccion p {
+    font-size: 18px; /* Tamaño legible */
+    line-height: 22px; /* Separación entre líneas */
+    margin-bottom: 20px; /* Separación entre párrafos */
+}
+
+/* Resaltado de palabras dentro de los párrafos */
+.sobremi .contenido-seccion p span {
+    color: #1CB698; /* Color verde para resaltar */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Contenedor de filas (para columnas de información) */
+.sobremi .fila {
+    display: flex; /* Permite columnas alineadas horizontalmente */
+}
+
+/* Columnas dentro de la fila */
+.sobremi .fila .col {
+    width: 50%; /* Cada columna ocupa la mitad del contenedor */
+}
+
+/* Título dentro de cada columna */
+.sobremi .fila .col h3 {
+    font-size: 28px; /* Tamaño medio para subtítulos */
+    font-family: 'Righteous', cursive;
+    margin-bottom: 25px; /* Espacio debajo del título */
+}
+
+/* Lista dentro de cada columna */
+.sobremi .fila .col ul {
+    list-style: none; /* Sin viñetas */
+}
+
+/* Elementos de la lista */
+.sobremi .fila .col ul li {
+    margin: 12px 0; /* Espacio entre elementos */
+}
+
+/* Resaltado de la parte “fuerte” de la lista */
+.sobremi .fila .col ul li strong {
+    display: inline-block; /* Permite ajustar ancho */
+    color: #1CB698; /* Color verde */
+    width: 130px; /* Ancho fijo para alineación */
+}
+
+/* Span dentro de la lista con estilo de etiqueta */
+.sobremi .fila .col ul li span {
+    background-color: #1CB698; /* Fondo verde */
+    padding: 3px; /* Espaciado interno */
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Contenedor de intereses (iconos o habilidades) */
+.sobremi .fila .col .contenedor-intereses {
+    display: flex; /* Alineación horizontal */
+    flex-wrap: wrap; /* Permite saltar a la siguiente línea */
+}
+
+/* Cada elemento de interés */
+.sobremi .fila .col .contenedor-intereses .interes {
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 15px 15px 0; /* Espaciado entre elementos */
+    display: flex; /* Centrado de contenido */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s; /* Animación suave al pasar el cursor */
+}
+
+/* Efecto hover sobre intereses */
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: #1CB698; /* Fondo verde al pasar el cursor */
+}
+
+/* Iconos dentro de cada interés */
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 30px; /* Tamaño del icono */
+    margin-bottom: 10px; /* Separación del texto */
+}
+
+/* Botón general de la sección */
+.sobremi button {
+    cursor: pointer; /* Cambio de cursor al pasar */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #fff; /* Borde blanco */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    display: block;
+    margin: 20px auto; /* Centrado horizontal */
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative; /* Para usar overlay */
+    z-index: 10;
+}
+
+/* Overlay dentro del botón (efecto de animación) */
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Inicialmente invisible */
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1; /* Detrás del texto */
+    transition: 1s; /* Animación suave */
+}
+
+/* Animación al pasar el cursor sobre el botón */
+.sobremi button:hover .overlay {
+    width: 100%; /* Rellena todo el botón */
+}
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------ RESPONSIVIDAD ----------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+/* Pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    #inicio, #sobremi {
+        line-height: -18px; /* Ajuste de interlineado (puede requerir revisión) */
+        margin-bottom: -100px; /* Ajuste de margen inferior */
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        margin-top: 30px; /* Separación entre iconos en móviles */
+    }
+
+    .sobremi .fila .col h3 {
+        margin-top: 30px; /* Ajuste de posición del subtítulo */
+    }
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------------ skills -----------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+/* SECCION S K I L L S */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .drupal{
+    width: 0%;
+    animation: 2s drupal forwards;
+}
+@keyframes drupal {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
+}
+@keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+.barra-skill {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+}
+
+/* -------------------------------------------------------------------------*/
+/* ---------------------------- progreso -----------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+.progreso {
+    width: 0; /* Empieza con 0% */
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px; /* Centra el texto */
+    color: white;
+    font-weight: bold;
+    transition: width 2s ease-out;
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------- CURRICULUM ------------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* -------------------------------------------------------------------------*/
+/* ---------------------------- interes ------------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+@media (max-width: 768px) { 
+    .contenedor-intereses, .interes {
+        text-align: justify; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        
+    }
+}
+
+/* -------------------------------------------------------------------------*/
+/* -------------------- SECCION PORTFOLIO imágenes -------------------------*/
+/* -------------------------------------------------------------------------*/
+
+.portfolio {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* Contenedor de portafolio dentro de un rectángulo */
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    background-color: #1e2326;
+    border: 3px solid #1CB698;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Menú de filtros tipo “píldora” */
+.filtros-izquierda {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filtros-izquierda ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrado */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filtros-izquierda ul li {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: 25px; /* Forma de píldora */
+    background-color: #1e2326;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.filtros-izquierda ul li.active {
+    background-color: #1CB698;
+    color: #fff;
+    border-color: #1CB698;
+}
+
+.filtros-izquierda ul li:hover {
+    background-color: #1CB698;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(28,182,152,0.4);
+}
+
+.titulo-portfolio {
+    font-size: 48px;
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    color: #1CB698;
+    margin-bottom: 20px;
+}
+
+.portfolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    row-gap: 50px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+/* -------------------------------------------------------------------------*/
+/* -------------------- OPCIÓN 5: Hover glow y elevación ------------------*/
+/* -------------------------------------------------------------------------*/
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.portfolio .galeria .proyecto:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(28, 182, 152, 0.6), 0 0 20px rgba(28,182,152,0.5);
+}
+
+.portfolio .galeria .proyecto:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2) saturate(1.2);
+}
+
+/* --- Overlay y texto ocultos --- */
+.portfolio .galeria .proyecto .overlay {
+    display: none;
+}
+
+/* Animación de desvanecimiento para imágenes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Media query para pantallas de tamaño mediano */
+@media (max-width: 768px) {
+    .portfolio .contenido-seccion {
+        padding: 20px;
+    }
+
+    .filtros-izquierda ul li {
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    .portfolio .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        row-gap: 40px;
+        justify-items: center;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .portfolio .contenido-seccion {
+        padding: 15px;
+    }
+
+    .filtros-izquierda ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filtros-izquierda ul li {
+        font-size: 15px;
+        padding: 8px 0;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .portfolio .galeria {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .portfolio .galeria .proyecto {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------ Boton Github -------------------------------*/
+
+.btn-proyectos {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 40px;
+    background: linear-gradient(135deg, #041310, #17a488);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(28, 182, 152, 0.5);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-proyectos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05); /* brillo más sutil */
+    transform: skewX(-20deg);
+    transition: all 0.6s ease;
+}
+
+.btn-proyectos:hover::before {
+    left: 200%;
+}
+
+.btn-proyectos:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(28, 182, 152, 0.6);
+}
+
+.icon-github {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.4s ease;
+}
+
+.btn-proyectos:hover .icon-github {
+    transform: translateX(4px) rotate(8deg); /* movimiento más sutil */
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------ SECCION TECNOLOGÍAS ----------------------------*/
+/* -------------------------------------------------------------------------*/
+
+.tecnologias {
+    background-color: #2C3238;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-tecnologias {
+    font-size: 42px;
+    color: #1CB698;
+    margin-bottom: 30px;
+    font-family: 'Righteous', sans-serif;
+}
+
+/* Tabla normal para escritorio */
+.tabla-tecnologias table {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tabla-tecnologias th,
+.tabla-tecnologias td {
+    padding: 20px;
+    border: 1px solid #17a488;
+    font-size: 18px;
+    background-color: #2C3238;
+    color: #fff;
+    text-align: center;
+}
+
+.tabla-tecnologias th {
+    background-color: #1CB698;
+}
+
+.tabla-tecnologias i {
+    color: #1CB698;
+    margin-bottom: 10px;
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tabla-tecnologias i:hover {
+    transform: scale(1.2);
+    color: #17a488;
+}
+
+.tabla-tecnologias td:hover {
+    background-color: #1B2429;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Pantallas pequeñas - tarjetas por categoría respetando el orden */
+@media (max-width: 480px) {
+    .titulo-tecnologias {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* Convertimos la tabla en bloques verticales */
+    .tabla-tecnologias table,
+    .tabla-tecnologias tbody,
+    .tabla-tecnologias tr {
+        display: block;
+        width: 100%;
+    }
+
+    /* Ocultamos los encabezados originales */
+    .tabla-tecnologias thead {
+        display: none;
+    }
+
+    /* Cada celda se convierte en tarjeta */
+    .tabla-tecnologias td {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        background-color: #1e2326;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        border: 1px solid #17a488;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Mostrar categoría en cada tarjeta */
+    .tabla-tecnologias td::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        color: #1CB698;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .tabla-tecnologias i {
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    /* Agrupamos cada fila en columna y respetamos el orden de categorías */
+    .tabla-tecnologias tbody tr {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tabla-tecnologias td[data-label="Front End"] { order: 1; }
+    .tabla-tecnologias td[data-label="Back End"] { order: 2; }
+    .tabla-tecnologias td[data-label="Base de Datos"] { order: 3; }
+    .tabla-tecnologias td[data-label="Cloud Computing"] { order: 4; }
+}
+
+
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------ SECCION CONTACTO -------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px; /* Corregido de max-swidth a max-width */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* -------------------------------------------------------------------------*/
+
+/* Responsividad: mover la columna hacia abajo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .contacto .col {
+        width: 100%; /* Asegura que la columna ocupe todo el ancho en pantallas pequeñas */
+        margin-top: 30px; /* Agrega espacio en la parte superior */
+        display: flex;
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        justify-content: space-between; /* Esto asegura que el contenido se distribuya y la imagen quede en la parte inferior */
+    }
+
+    .contacto .fila {
+        flex-direction: column; 
+    }
+
+    .contacto .col img {
+        width: 100%;
+        margin-top: -50px; /* Empuja la imagen hacia abajo dentro del contenedor */
+        display: block;
+    }
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* ------------------------------ footer -----------------------------------*/
+/* -------------------------------------------------------------------------*/
+
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
+
+
+/* Meta viewport */
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+}
+
+/* Ajuste de fuentes para móviles */
+@media (max-width: 768px) {
+    .contenedor-header header .logo a {
+        font-size: 30px; 
+    }
+
+    .contenedor-header header nav ul li a {
+        font-size: 14px; 
+    }
+
+    .inicio .contenido-banner h1 {
+        font-size: 30px; 
+    }
+
+    .sobremi h2, .skills h2, .curriculum h2, .portfolio h2 {
+        font-size: 36px; 
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 16px; 
+    }
+
+    .portfolio .galeria {
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 20px; 
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%; 
+        aspect-ratio: 16 / 9;
+    }
+
+    .contacto h2 {
+        font-size: 36px; 
+    }
+
+    .contacto .col {
+        width: 100%; 
+        padding: 15px;
+    }
+}
+
+/* Ajuste para pantallas muy pequeñas (menores a 480px) */
+@media (max-width: 480px) {
+    .contenedor-header header .logo a {
+        font-size: 26px; 
+    }
+
+    .contenedor-header header nav ul li a {
+        font-size: 12px; 
+    }
+
+    .inicio .contenido-banner h1 {
+        font-size: 28px; 
+    }
+
+    .sobremi .contenido-seccion p {
+        font-size: 14px; 
+    }
+
+    .portfolio .galeria {
+        grid-template-columns: 1fr; 
+        grid-gap: 20px;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .contacto h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
